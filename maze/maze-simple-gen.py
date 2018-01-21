@@ -139,7 +139,7 @@ while True:
         
         dx = m.accelerometer.get_x()
         dy = m.accelerometer.get_y()
-        ax = int(dy > dx)
+        ax = int(abs(dy) > abs(dx))
         dx = clamp(-1, dx // 200, 1)
         dy = clamp(-1, dy // 200, 1)
         if dx != 0 or dy != 0:
@@ -150,7 +150,7 @@ while True:
         
         #g.moveplayer((dx, dy))
 
-    m.sleep(100)
+    m.sleep(200)
     f += 1
     if abs(g.player[0] - gx) + abs(g.player[1] - gy) <= 1:
         break
@@ -158,5 +158,5 @@ while True:
 m.sleep(500)
 
 while True:    
-    m.display.scroll("{}s".format(f // 10))
+    m.display.scroll("{}s".format(f // 5))
     m.sleep(1000)
