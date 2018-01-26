@@ -8,6 +8,12 @@ You will find here small games that generate a maze and let you solve it by tilt
 
 [In depth description](https://ctopy.wordpress.com/2018/01/20/micro-maze-for-microbit/)
 
+## hide-and-seek
+
+Hide and seek application - requires two micro:bits.
+
+[In depth description](https://ctopy.wordpress.com/2017/12/23/bbc-microbit-hide-and-seek/)
+
 ### How to install on micro:bit
 
 1. Go to Python editor on http://python.microbit.org
